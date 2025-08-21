@@ -5,20 +5,20 @@
 class Rdv < Formula
   desc "Interactive dev‑env config manager"
   homepage "https://github.com/yonasyiheyis/rdv"
-  version "0.4.0"
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yonasyiheyis/rdv/releases/download/v0.4.0/rdv_0.4.0_darwin_amd64.tar.gz"
-      sha256 "924e3b000bffa0ba005375a05f1d2bfe55d5f7161f3d2277328695dae2bfa6ca"
+      url "https://github.com/yonasyiheyis/rdv/releases/download/v0.5.0/rdv_0.5.0_darwin_amd64.tar.gz"
+      sha256 "27adc6f36af53f9d129f8ea9cf8e27caefd9c066bf83048c03e4aa9dfb1f0229"
 
       def install
         bin.install "rdv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yonasyiheyis/rdv/releases/download/v0.4.0/rdv_0.4.0_darwin_arm64.tar.gz"
-      sha256 "e2c5d9a476300ebbc445fa3b08a378bb7c9adabdbb2cf546edc42ad79fa44cd5"
+      url "https://github.com/yonasyiheyis/rdv/releases/download/v0.5.0/rdv_0.5.0_darwin_arm64.tar.gz"
+      sha256 "88251f656548a0c92a8f9d82b62d7d340e98658709897b2634d500bec7d7f728"
 
       def install
         bin.install "rdv"
@@ -28,15 +28,15 @@ class Rdv < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/yonasyiheyis/rdv/releases/download/v0.4.0/rdv_0.4.0_linux_amd64.tar.gz"
-      sha256 "67c0e12c8951a8450e0118eae6c2c16c550e4efd5b6afa9019d294d2b0be9138"
+      url "https://github.com/yonasyiheyis/rdv/releases/download/v0.5.0/rdv_0.5.0_linux_amd64.tar.gz"
+      sha256 "7d67d94567d9a4b1b0d6780a6f81b2bc34cc1e272b87a6d76bfc70475fbc063d"
       def install
         bin.install "rdv"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/yonasyiheyis/rdv/releases/download/v0.4.0/rdv_0.4.0_linux_arm64.tar.gz"
-      sha256 "51d84e89d224d28dfeae6b42543880a2d19301821cbf085527a30ef8ff152c0d"
+      url "https://github.com/yonasyiheyis/rdv/releases/download/v0.5.0/rdv_0.5.0_linux_arm64.tar.gz"
+      sha256 "893a75055fc89cd1a32fcb3efc1dd8e1fd594693d69dfccdc9e593a9ad8c269f"
       def install
         bin.install "rdv"
       end
