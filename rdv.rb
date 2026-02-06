@@ -5,20 +5,20 @@
 class Rdv < Formula
   desc "Interactive dev‑env config manager"
   homepage "https://github.com/yonasyiheyis/rdv"
-  version "1.0.0"
+  version "1.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yonasyiheyis/rdv/releases/download/v1.0.0/rdv_1.0.0_darwin_amd64.tar.gz"
-      sha256 "2657c2384a568961f5f9c5931cb4de308fbd0602bd1ee27b22eb8050e1c47054"
+      url "https://github.com/yonasyiheyis/rdv/releases/download/v1.1.0/rdv_1.1.0_darwin_amd64.tar.gz"
+      sha256 "b8b702959244b7c86d59bde6aca413aa50355abb996a44aef4e60ae603968fba"
 
       def install
         bin.install "rdv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yonasyiheyis/rdv/releases/download/v1.0.0/rdv_1.0.0_darwin_arm64.tar.gz"
-      sha256 "bc8a9c068e10d7b66c3a145f7da332887a8acd501b7e94746bb48015f865300c"
+      url "https://github.com/yonasyiheyis/rdv/releases/download/v1.1.0/rdv_1.1.0_darwin_arm64.tar.gz"
+      sha256 "afc7b70ee012af49c7fee7ea3de305dfcf8287e691160fe88e9d060e72b1cedd"
 
       def install
         bin.install "rdv"
@@ -27,16 +27,16 @@ class Rdv < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/yonasyiheyis/rdv/releases/download/v1.0.0/rdv_1.0.0_linux_amd64.tar.gz"
-      sha256 "a07c1141af54ecf133f1c167b7c3ce9336210f660394afe6f75346b7560e0fdf"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/yonasyiheyis/rdv/releases/download/v1.1.0/rdv_1.1.0_linux_amd64.tar.gz"
+      sha256 "a06108774286848d97eb2e51f785794dd807608884879f7055879c91de4c9d99"
       def install
         bin.install "rdv"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/yonasyiheyis/rdv/releases/download/v1.0.0/rdv_1.0.0_linux_arm64.tar.gz"
-      sha256 "cee1a2c8bcf5ad7c75e6db2f1cc784c3df07b9d0f38f64dd576e283469b90aa0"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/yonasyiheyis/rdv/releases/download/v1.1.0/rdv_1.1.0_linux_arm64.tar.gz"
+      sha256 "c85204520caf4668cb2c31340ca8686d9d831d88927a2c116ad7580b147bff1a"
       def install
         bin.install "rdv"
       end
