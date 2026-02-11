@@ -10,7 +10,7 @@ class Rdv < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/yonasyiheyis/rdv/releases/download/v1.2.0/rdv_1.2.0_darwin_amd64.tar.gz"
-      sha256 "f6ab2f8562a9562b9c301b49405438edeebc73ab5143732f43e7891f77f7acf9"
+      sha256 "4f1f9810fe5e15f8793938d3e40bc6f32aeda8691329bad4ab51d7f7bca73a24"
 
       def install
         bin.install "rdv"
@@ -18,7 +18,7 @@ class Rdv < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/yonasyiheyis/rdv/releases/download/v1.2.0/rdv_1.2.0_darwin_arm64.tar.gz"
-      sha256 "5b682268a3bf80be9e7ab0e4d09376046cedbb77dde9c1d396107e9d4a4873dd"
+      sha256 "729c038e597618c76dcc085a6c7b659829da196c00be79d6acc43fe593b3662e"
 
       def install
         bin.install "rdv"
@@ -29,14 +29,14 @@ class Rdv < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/yonasyiheyis/rdv/releases/download/v1.2.0/rdv_1.2.0_linux_amd64.tar.gz"
-      sha256 "529b7220372b00a2e0932a365c3852f713201427a3d20dde7acc4bce05add24e"
+      sha256 "0842082bdb4865396597bc817a4516144918f46bfac22b90bea02eff60716918"
       def install
         bin.install "rdv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/yonasyiheyis/rdv/releases/download/v1.2.0/rdv_1.2.0_linux_arm64.tar.gz"
-      sha256 "5262e8998140af72a8761caa9226e77b6ee48804375f6e2f4ff5e3fc5fc9857e"
+      sha256 "1c4751dda073bea5f6a04206b3911317071703348f71b70aa41216383913d189"
       def install
         bin.install "rdv"
       end
